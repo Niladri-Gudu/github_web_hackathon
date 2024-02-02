@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed Element While Scrolling</title>
+  <style>
+    /* Define the styles for the fixed element */
+    .fixed-element {
+      position: fixed;
+      top: 20px; /* Adjust the top position as needed */
+      left: 20px; /* Adjust the left position as needed */
+      background-color: #ffffff;
+      padding: 10px;
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 1000; /* Adjust the z-index as needed */
+    }
+    
+    /* Additional styles for the content */
+    .content {
+      height: 2000px; /* Just for demonstration purposes to enable scrolling */
+    }
+  </style>
+</head>
+<body>
+  <!-- Fixed element -->
+  <div class="fixed-element">
+    This is a fixed element.
+  </div>
+  
+  <!-- Content with height to enable scrolling -->
+  <div class="content">
+    Scroll down to see the fixed element in action.
+  </div>
+</body>
+</html>
